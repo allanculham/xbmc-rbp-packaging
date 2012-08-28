@@ -7,6 +7,7 @@ To make debian packages, there are some requirements::
 
     sudo apt-get update
     sudo apt-get install pbuilder
+    sudo apt-get install qemu-user-static
 
 You'll also need to register the raspbian repository public key with apt::
 
