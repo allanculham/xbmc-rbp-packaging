@@ -1,4 +1,4 @@
-#!/bin/sh
+c#!/bin/sh
 #TODO:
 #wget http://archive.raspbian.org/raspbian.public.key -O - | sudo apt-key add -
 
@@ -26,7 +26,7 @@ pbuilder $1 \
     --distribution wheezy \
     --architecture armhf \
     --debootstrap $DEBOOTSTRAP \
-    --configfile $PBUILDER_DIR/pbuilderrc \
+    --configfile /etc/pbuilderrc \
     --mirror http://archive.raspbian.org/raspbian \
     --basetgz $PBUILDER_DIR/base.tgz \
     --buildresult $PBUILDER_DIR/result \
